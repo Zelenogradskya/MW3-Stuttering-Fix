@@ -1,0 +1,8 @@
+{
+  "ProductId": "MW3StutteringFix.AudioCache.v1",
+  "Name": "MW3 Stuttering Fix",
+  "Version": "0.1.0-alpha",
+  "Author": "MW3 Stuttering Fix contributors",
+  "License": "MIT",
+  "DLLSHA256": "70546F6707CB78A387456CB7399C9AFA2FCFF9D98DFA03DD72476FBE3CDC24F1"
+}
