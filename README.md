@@ -11,17 +11,23 @@ Campaign-only streamed-audio seek cache for **Call of Duty: Modern Warfare 3 (20
 Early alpha: a prototype produced a user-confirmed improvement on one PC, with isolated hitches remaining.
 The portable release has automated and real-cache validation, not broad gameplay/hardware coverage.
 
-## Install and play
+## Installation and launching
 
-1. Extract the entire release outside the game directory.
-2. Run **Setup.cmd**. Choose the detected Steam installation or enter the directory containing iw5sp.exe.
-3. Choose a local cache directory with about **5 GB free**.
-4. Wait for **Setup complete**. The cache is generated from your own installed archives; no game content is downloaded or included.
-5. Open Steam normally and run **Start.cmd**.
-6. Keep the launcher window open. Exit Campaign and wait for **Temporary DLL removed**.
+This fix is intended only for the **Call of Duty: Modern Warfare 3 (2011) Steam x64 campaign**. Approximately **5 GB of free space** is required for the audio cache.
 
-Before launch, DLL/code identity, cache and source-archive hashes are checked. This takes several seconds.
-UAC is requested only if the game directory is not writable.
+1. Download **[MW3StutteringFix-0.1.0-alpha-x64.zip](https://github.com/Zelenogradskya/MW3-Stuttering-Fix/releases/download/v0.1.0-alpha/MW3StutteringFix-0.1.0-alpha-x64.zip)** from the [release page](https://github.com/Zelenogradskya/MW3-Stuttering-Fix/releases/tag/v0.1.0-alpha). Select the ready-to-use fix archive under **Assets**.
+2. Extract the entire archive into a separate folder **outside the game directory**, such as `D:\MW3StutteringFix`.
+3. Close the game and run **Setup.cmd**. It will detect your installation or ask for the folder containing `iw5sp.exe`.
+4. Choose an audio cache folder. You can keep the suggested location. Wait for **Setup complete** — the cache is generated from your own installed game files.
+5. Open Steam and run **Start.cmd**. Approve the UAC prompt if required.
+6. Play the campaign. **Keep the fix launcher window open until you exit the game.**
+7. After exiting, wait for **Temporary DLL removed** — the temporary DLL has been removed.
+
+Use **Start.cmd** for subsequent sessions. You normally do not need to rebuild the cache.
+
+Before launch, DLL/code identity, cache and source-archive hashes are checked. This takes several seconds. UAC is requested only if the game directory is not writable.
+
+If you receive an **Unsupported iw5sp.exe** error, your game build is not currently supported. Report it in [Issues](https://github.com/Zelenogradskya/MW3-Stuttering-Fix/issues), including the displayed code hash.
 
 ## Campaign only / recovery
 
